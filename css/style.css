@@ -1,0 +1,107 @@
+/* demo styles */
+body {
+  padding-top:20px;
+  font-family:sans-serif;
+  text-align:center;
+  background:#ddd;
+}
+h3 {
+  font-size:20px;
+}
+div {
+  line-height:50px;
+}
+.module {
+  background:gold;
+  margin:20px auto;
+  padding:30px
+}
+.module div {
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  border:1px solid #ba0000;
+}
+
+
+/* the good stuff starts here :) */
+
+/* stacked */
+.stacked {
+  width:300px;
+}
+.stacked > div {
+  height:50px
+}
+
+/* two columns */
+.twocol {
+  width:300px;
+  overflow:hidden;
+}
+.twocol > div {
+  height:50px;
+}
+.twocol > div:first-child {
+  width:100px;
+  float:left;
+}
+.twocol > div:last-child {
+  width:200px;
+  float:right;
+}
+
+/* multiple columns */
+.multicol {
+  overflow:hidden;
+  width:300px;
+}
+.multicol > div {
+  height:50px;
+  width:100px;
+  float:left;
+}
+
+/* multiple columns w/ margins */
+.multicol_margins {
+  overflow:hidden;
+  width:300px;
+}
+.multicol_margins > div {
+  height:50px;
+  width:80px;
+  float:left;
+  margin-left:30px;
+}
+.multicol_margins > div:first-child {
+  margin-left:0;
+}
+
+/* grid */
+.grid {
+  overflow:hidden;
+  width:300px;
+}
+.grid > div {
+  height:50px;
+  width:100px;
+  float:left;
+}
+
+/* grid w/ margins */
+.grid_margins {
+  overflow:hidden;
+  width:300px;
+}
+.grid_margins > .liner {
+  margin-top:-30px;
+  margin-right:-30px;
+  border:0;
+}
+.grid_margins > .liner > div {
+  float:left;
+  height:50px;
+  width:80px;
+  margin-top:30px;
+  margin-right:30px;
+}

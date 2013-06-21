@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cool Page</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+
+
+<h3>stacked</h3>
+<!--
+  Elements set to display:block will stack.
+-->
+<div class="module stacked">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+</div>
+
+<h3>two columns</h3>
+<!--
+  One element floats left; the other floats right.
+  The elements' combined width (plus any space between)
+  equals the width of the container.
+  The container clears the floats.
+-->
+<div class="module twocol">
+  <div>1</div>
+  <div>2</div>
+</div>
+
+<h3>multiple columns</h3>
+<!--
+  Each element floats left.
+  The elements' combined width should not
+  be greater than the the width of the container.
+  The container clears the floats
+-->
+<div class="module multicol">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+</div>
+
+<h3>multiple columns with margins</h3>
+<!--
+  Elements float left.
+  Each element, except the first, has a left margin.
+  The elements' combined widths + margins should be equal to the
+  width of the container.
+  The container clears the floats.
+-->
+<div class="module multicol_margins">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+</div>
+
+<h3>grid</h3>
+<!--
+  Elements float left.
+  The container clears the floats.
+-->
+<div class="module grid">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+</div>
+
+<h3>grid with margins</h3>
+<!--
+  Elements float left
+  Elements have margin-right and/or a margin-top.
+  The "liner" element has a negative margin-right and/or margin-top.
+  The container clears the floats.
+-->
+<div class="module grid_margins">
+  <div class="liner">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+  </div>
+</div>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+  </body>
+</html>
+
+
